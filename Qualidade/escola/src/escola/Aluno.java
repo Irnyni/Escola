@@ -96,24 +96,24 @@ public class Aluno extends JFrame {
 		btnVoltar.setBackground(new Color(255, 255, 255));
 		contentPane.add(btnVoltar);
 		
-		JButton btnSolicitarHistorico = new JButton("EXCLUIR DISCIPLINA");
+		JButton btnSolicitarHistorico = new JButton("EXCLUIR ALUNO");
 		btnSolicitarHistorico.setForeground(new Color(64, 0, 0));
 		btnSolicitarHistorico.setFont(new Font("Tahoma", Font.BOLD, 25));
 		btnSolicitarHistorico.setBackground(Color.WHITE);
 		btnSolicitarHistorico.setBounds(154, 416, 450, 39);
 		contentPane.add(btnSolicitarHistorico);
 		
-		JButton btnBoletim = new JButton("ALTERAR DISCIPLINA");
+		JButton btnBoletim = new JButton("ALTERAR ALUNO");
 		btnBoletim.setForeground(new Color(64, 0, 0));
 		btnBoletim.setFont(new Font("Tahoma", Font.BOLD, 25));
 		btnBoletim.setBackground(Color.WHITE);
 		btnBoletim.setBounds(154, 323, 450, 39);
 		contentPane.add(btnBoletim);
 		
-		JButton btnSalvar = new JButton("ADICIONAR DISCIPLINA");
+		JButton btnSalvar = new JButton("ADICIONAR ALUNO");
 		btnSalvar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Inscricoes frame = new Inscricoes();
+				Aluno2 frame = new Aluno2();
 				frame.setVisible(true);
 				dispose();
 				
@@ -132,6 +132,13 @@ public class Aluno extends JFrame {
 		btnVisualizarGrade.setBackground(Color.WHITE);
 		btnVisualizarGrade.setBounds(154, 508, 450, 39);
 		contentPane.add(btnVisualizarGrade);
+		
+		JButton btnVoltar_2 = new JButton("VOLTAR");
+		btnVoltar_2.setForeground(new Color(64, 0, 0));
+		btnVoltar_2.setFont(new Font("Tahoma", Font.BOLD, 25));
+		btnVoltar_2.setBackground(Color.WHITE);
+		btnVoltar_2.setBounds(35, 690, 148, 39);
+		contentPane.add(btnVoltar_2);
 	}
 }
 

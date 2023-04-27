@@ -36,6 +36,7 @@ import java.awt.TextField;
 import javax.swing.border.SoftBevelBorder;
 import javax.swing.border.BevelBorder;
 import javax.swing.border.MatteBorder;
+import com.jgoodies.forms.factories.DefaultComponentFactory;
 
 
 
@@ -112,7 +113,7 @@ public class Disciplina extends JFrame {
 		JButton btnSalvar = new JButton("ADICIONAR DISCIPLINA");
 		btnSalvar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Inscricoes frame = new Inscricoes();
+				Disciplina2 frame = new Disciplina2();
 				frame.setVisible(true);
 				dispose();
 				
@@ -131,6 +132,13 @@ public class Disciplina extends JFrame {
 		btnVisualizarGrade.setBackground(Color.WHITE);
 		btnVisualizarGrade.setBounds(154, 508, 450, 39);
 		contentPane.add(btnVisualizarGrade);
+		
+		JButton btnVoltar_2 = new JButton("VOLTAR");
+		btnVoltar_2.setForeground(new Color(64, 0, 0));
+		btnVoltar_2.setFont(new Font("Tahoma", Font.BOLD, 25));
+		btnVoltar_2.setBackground(Color.WHITE);
+		btnVoltar_2.setBounds(32, 690, 148, 39);
+		contentPane.add(btnVoltar_2);
 	}
 }
 
