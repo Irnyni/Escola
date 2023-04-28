@@ -101,19 +101,15 @@ public class TelaCoord extends JFrame {
 		JButton btnSalvar = new JButton("ANDAMENTO INSCRIÇÕES");
 		btnSalvar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
-				AndamentoInscricoes frame = new AndamentoInscricoes();
-				frame.setVisible(true);
-				dispose();
 			}
 		});
 		btnSalvar.setForeground(new Color(64, 0, 0));
 		btnSalvar.setFont(new Font("Tahoma", Font.BOLD, 25));
 		btnSalvar.setBackground(Color.WHITE);
-		btnSalvar.setBounds(162, 221, 450, 39);
+		btnSalvar.setBounds(162, 283, 450, 39);
 		contentPane.add(btnSalvar);
 		
-		JButton btnCancelarInscricao = new JButton("LISTA DE ESPERA");
+		JButton btnCancelarInscricao = new JButton("ALUNOS");
 		btnCancelarInscricao.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Aluno2 frame = new Aluno2();
@@ -124,8 +120,30 @@ public class TelaCoord extends JFrame {
 		btnCancelarInscricao.setForeground(new Color(64, 0, 0));
 		btnCancelarInscricao.setFont(new Font("Tahoma", Font.BOLD, 25));
 		btnCancelarInscricao.setBackground(Color.WHITE);
-		btnCancelarInscricao.setBounds(162, 290, 450, 39);
+		btnCancelarInscricao.setBounds(162, 346, 450, 39);
 		contentPane.add(btnCancelarInscricao);
+		
+		JButton btnBoletim = new JButton("DISCIPLINAS");
+		btnBoletim.setForeground(new Color(64, 0, 0));
+		btnBoletim.setFont(new Font("Tahoma", Font.BOLD, 25));
+		btnBoletim.setBackground(Color.WHITE);
+		btnBoletim.setBounds(162, 421, 450, 39);
+		contentPane.add(btnBoletim);
+		
+		JButton btnSolicitarHistorico = new JButton("GRADES");
+		btnSolicitarHistorico.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				GradeDisponibilidade frame = new GradeDisponibilidade();
+				frame.setVisible(true);
+				dispose();
+				
+			}
+		});
+		btnSolicitarHistorico.setForeground(new Color(64, 0, 0));
+		btnSolicitarHistorico.setFont(new Font("Tahoma", Font.BOLD, 25));
+		btnSolicitarHistorico.setBackground(Color.WHITE);
+		btnSolicitarHistorico.setBounds(162, 487, 450, 39);
+		contentPane.add(btnSolicitarHistorico);
 	}
 }
 
