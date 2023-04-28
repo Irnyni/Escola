@@ -98,6 +98,14 @@ public class Disciplina2 extends JFrame {
 		contentPane.add(btnVoltar);
 		
 		JButton btnVoltar_2 = new JButton("VOLTAR");
+		btnVoltar_2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Gestao frame = new Gestao();
+				frame.setVisible(true);
+				dispose();
+			
+			}
+		});
 		btnVoltar_2.setForeground(new Color(64, 0, 0));
 		btnVoltar_2.setFont(new Font("Tahoma", Font.BOLD, 25));
 		btnVoltar_2.setBackground(Color.WHITE);

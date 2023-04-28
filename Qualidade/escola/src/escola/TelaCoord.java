@@ -112,7 +112,7 @@ public class TelaCoord extends JFrame {
 		JButton btnCancelarInscricao = new JButton("ALUNOS");
 		btnCancelarInscricao.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Aluno frame = new Aluno();
+				Aluno2 frame = new Aluno2();
 				frame.setVisible(true);
 				dispose();
 			}
