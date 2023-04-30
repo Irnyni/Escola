@@ -80,7 +80,7 @@ public class ListaEspera extends JFrame {
 		tglbtnBiologia_2.setForeground(new Color(64, 0, 0));
 		tglbtnBiologia_2.setFont(new Font("Tahoma", Font.BOLD, 25));
 		tglbtnBiologia_2.setBackground(Color.WHITE);
-		tglbtnBiologia_2.setBounds(155, 234, 388, 39);
+		tglbtnBiologia_2.setBounds(183, 241, 388, 39);
 		contentPane.add(tglbtnBiologia_2);
 		
 		JLabel lblListaDeTurmas = new JLabel("LISTA DE TURMAS");
@@ -89,31 +89,38 @@ public class ListaEspera extends JFrame {
 		lblListaDeTurmas.setFont(new Font("Javanese Text", Font.BOLD, 45));
 		lblListaDeTurmas.setAutoscrolls(true);
 		lblListaDeTurmas.setAlignmentY(1.0f);
-		lblListaDeTurmas.setBounds(83, 125, 522, 58);
+		lblListaDeTurmas.setBounds(111, 125, 522, 58);
 		contentPane.add(lblListaDeTurmas);
 		
 		JToggleButton tglbtnCincias_1 = new JToggleButton("CIÊNCIAS 2");
 		tglbtnCincias_1.setForeground(new Color(64, 0, 0));
 		tglbtnCincias_1.setFont(new Font("Tahoma", Font.BOLD, 25));
 		tglbtnCincias_1.setBackground(Color.WHITE);
-		tglbtnCincias_1.setBounds(155, 314, 388, 39);
+		tglbtnCincias_1.setBounds(183, 314, 388, 39);
 		contentPane.add(tglbtnCincias_1);
 		
 		JToggleButton tglbtnBiologia_1 = new JToggleButton("HISTÓRIA 2");
 		tglbtnBiologia_1.setForeground(new Color(64, 0, 0));
 		tglbtnBiologia_1.setFont(new Font("Tahoma", Font.BOLD, 25));
 		tglbtnBiologia_1.setBackground(Color.WHITE);
-		tglbtnBiologia_1.setBounds(155, 389, 388, 39);
+		tglbtnBiologia_1.setBounds(183, 389, 388, 39);
 		contentPane.add(tglbtnBiologia_1);
 		
 		JToggleButton tglbtnMatemtica = new JToggleButton("MATEMÁTICA 2");
 		tglbtnMatemtica.setForeground(new Color(64, 0, 0));
 		tglbtnMatemtica.setFont(new Font("Tahoma", Font.BOLD, 25));
 		tglbtnMatemtica.setBackground(Color.WHITE);
-		tglbtnMatemtica.setBounds(156, 465, 387, 39);
+		tglbtnMatemtica.setBounds(184, 465, 387, 39);
 		contentPane.add(tglbtnMatemtica);
 		
 		JButton btnSeguir = new JButton("AVANÇAR");
+		btnSeguir.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				ListaEspera2 frame = new ListaEspera2();
+				frame.setVisible(true);
+				dispose();
+			}
+		});
 		btnSeguir.setForeground(new Color(64, 0, 0));
 		btnSeguir.setFont(new Font("Tahoma", Font.BOLD, 25));
 		btnSeguir.setBackground(Color.WHITE);
